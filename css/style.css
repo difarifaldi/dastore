@@ -1,0 +1,242 @@
+
+
+/* home start*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container2{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: brown;
+}
+nav ul li a:hover{
+    color: wheat;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-1 h2{
+    font-size: 54px;
+}
+.col-1 h3{
+    font-size: 20px;
+    color: yellowgreen;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.col-1 p{
+    font-size: 16px;
+    color: coral;
+    font-weight: 100;
+}
+.col-1 h4{
+    margin: 30px 0;
+    font-size: 20px;
+}
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+button img{
+    width: 30px;
+    display: none;
+}
+button:hover img{
+    display: block;
+}
+button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient( #ff469f, #ff6062);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-2 .controller1{
+    width: 90%;
+}
+
+.social-links img{
+    height: 13px;
+    margin: 20px;
+    cursor: pointer;
+
+}
+.social-links{
+    text-align: center;
+}
+
+@media only screen and (max-width:700px) {
+
+    nav ul{
+        width: 100%;
+        background: linear-gradient( #ff54a2, #ff575a);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .row1{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-2 .controller1{
+        width: 77%;
+    }
+    .color-box{
+        transform: translateX(75px);
+    }
+    .col-1{
+        flex-basis: 100%;
+    }
+    .col-1 h2{
+        font-size: 35px;
+    }
+    .col-2 h3{
+        font-size: 15px;
+    }
+}
+.container7{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 25px;
+    width: 300px;
+
+    background-color: rgba(0,0,0,.7);
+    box-shadow: 0 0 10px rgba(255,255,255,.3);
+}
+
+.container7 h1{
+text-align: center;
+font-size: 40px;
+color: white;
+border-bottom: 5px solid #B6AA56;
+margin-bottom: 30px;
+padding: 10px 0;
+text-transform: uppercase;
+}
+
+.textbox{
+width: 100%;
+overflow: hidden;
+font-size: 20px;
+padding: 8px 0;
+margin: 8px 0;
+color: white;
+border-bottom: 2px solid #B6AA56;
+}
+
+.textbox i{
+width: 26px;
+float: left;
+text-align: center;
+}
+
+.textbox input{
+border: none;
+outline: none;
+background: none;
+color: white;
+font-size: 18px;
+width: 80%;
+float: left;
+margin: 0 10px;
+}
+
+.btn{
+width: 100%;
+background: #4caf50;
+border: 2px solid #B6AA56;
+color: white;
+padding: 5px;
+font-size: 18px;
+cursor: pointer;
+margin: 12px 0;
+margin-bottom: 20px;
+}
+
+.btn:hover {background-color: #009406;}
